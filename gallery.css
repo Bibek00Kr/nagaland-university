@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    background: #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #444;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 10px;
+}
+nav ul li:hover{
+    background-color: black;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #000000;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+}
+
+nav ul ul li {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul ul li a {
+    padding: 10px;
+    color: #fff;
+}
+
+nav ul ul li a:hover {
+    background: #666;
+}
+.gallery-container {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slideshow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slides {
+    max-width: calc(100% / 3); /* Adjust width for up to 3 images per row */
+    max-height: 200px; /* Adjust height as needed */
+    margin: 5px;
+}
+
+/* Additional styles for up to 6 images */
+@media screen and (min-width: 600px) {
+    .slides {
+        max-width: calc(100% / 3); /* Adjust width for up to 3 images per row */
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .slides {
+        max-width: calc(100% / 6); /* Adjust width for up to 6 images per row */
+    }
+}

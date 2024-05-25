@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    float: right;
+    margin-top: -40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.graph {
+    height: 200px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar {
+    width: 20px;
+    background-color: #4CAF50;
+    margin-right: 30px;
+    position: relative;
+}
+
+
+.label,
+.percentage {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+
+.label {
+    bottom: -20px;
+}
+
+.percentage {
+    top: -20px;
+}

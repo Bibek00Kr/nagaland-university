@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Usage Dashboard</title>
+    <link rel="stylesheet" href="ss0.css">
+</head>
+<body>
+    <header>
+        <h1>Energy Usage Dashboard</h1>
+        <nav>
+            <a href="utilities.html">Back to Main</a>
+        </nav>
+    </header>
+    <main>
+        <section id="current">
+            <h2>Current Energy Usage</h2>
+            <p>Total energy consumed: 1,000 kWh</p>
+            <p>Renewable energy sources: 30%</p>
+            <div class="graph">
+                <div class="bar" style="height: 120px;">
+                    <span class="label">Solar</span>
+                    <span class="percentage">30%</span>
+                </div>
+                <div class="bar" style="height: 90px;">
+                    <span class="label">Wind</span>
+                    <span class="percentage">20%</span>
+                </div>
+                <div class="bar" style="height: 110px;">
+                    <span class="label">Hydro</span>
+                    <span class="percentage">25%</span>
+                </div>
+            </div>
+        </section>
+        <section id="history">
+            <h2>Historical Energy Usage</h2>
+            <p>Monthly energy consumption:</p>
+            <div class="graph">
+                <div class="bar" style="height: 120px;">
+                    <span class="label">Jan</span>
+                    <span class="percentage">60%</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Utilities</p>
+    </footer>
+</body>
+</html>
